@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:text="Pobierz"
+        android:textSize="25dp"
+        android:backgroundTint="@color/red"
+        android:id="@+id/downloadButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/downloadButton"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/start"
+            android:text="Miejsce odlotu:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/downloadButton"
+            android:id="@+id/stop"
+
+            android:text="Miejsce przylotu"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/downloadButton"
+            android:id="@+id/date"
+            android:text="Data:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/downloadButton"
+            android:id="@+id/boatman"
+            android:text="Przewoźnik:"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
